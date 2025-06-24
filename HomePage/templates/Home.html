@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block blockname %}
+        
+
+
+<h1>Hello world</h1>
+
+<h1>User List</h1>
+    <ul>
+        {% for user in users %}
+            <li>
+                <a href="{% url 'user_detail' user.pk %}">{{ user.First_Name }} {{ user.Last_Name }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+
+
+
+
+
+{% endblock blockname %}

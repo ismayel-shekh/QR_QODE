@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block blockname %}
+        
+<h1>This is data qr code</h1>
+
+
+<h1>{{ user.First_Name }} {{ user.Last_Name }}</h1>
+    <p>Phone Number: {{ user.phone_number }}</p>
+    <img src="{{ user.qr_code.url }}" alt="QR Code">
+
+
+{% endblock blockname %}
